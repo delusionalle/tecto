@@ -1,0 +1,25 @@
+body {
+    background-color: #E96855; /* Corrected: Add the hash symbol */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#start-screen {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
