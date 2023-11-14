@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #E96855; /* Use your background color */
+}
+
+#top-control-panel {
+    background-color: #234C7D; /* Updated color for the top control panel */
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure the top control panel is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    display: flex;
+    justify-content: space-between; /* Spread content across the panel */
+    align-items: center;
+}
+
+#top-control-panel #logo {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Text color for the logo */
+}
+
+#top-control-panel img {
+    max-height: 30px; /* Adjust the max height as needed */
+    margin-right: 10px;
+}
+
+#top-control-panel button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent; /* Make the background transparent */
+    border: none; /* Remove the border */
+    color: #fff; /* Text color for the buttons */
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px; /* Adjust the margin as needed */
+}
+
+#logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo-section img {
+    max-height: 150px; /* Adjust the max height as needed */
+    margin-right: 20px;
+}
+
+#logo-section h1 {
+    color: #234C7D; /* Text color for the heading */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#logo-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent; /* Make the background transparent */
+    border: none; /* Remove the border */
+    color: #234C7D; /* Text color for the button */
+}
+
+#right-side-panel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%; /* Vertically center the right panel */
+    right: 0;
+    z-index: 1; /* Ensure the right side panel is above other elements */
+    padding: 10px;
+    gap: 10px;
+    background-color: #234C7D; /* Updated color for the right side panel */
+    transform: translateY(-50%); /* Correctly center the right panel */
+}
+
+#right-side-panel button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent; /* Make the background transparent */
+    border: none; /* Remove the border */
+    color: #fff; /* Text color for the buttons */
+}
+
+#side-panel {
+    display: none; /* Hide side panel initially */
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff; /* Add your desired color for the side panel */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
