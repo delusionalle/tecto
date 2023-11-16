@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    color: blue;
+}
+
+.partner-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 50%;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: white; /* Add white background color */
+    display: flex;
+    flex-direction: column; /* Set to column layout */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text horizontally */
+}
+
+.section h2 {
+    color: black;
+    margin-top: 10px; /* Add spacing between image and text */
+}
+
+.partner-name {
+    font-weight: bold;
+}
+
+.partner-img {
+    max-width: 200px; /* Increase image size */
+    margin-bottom: 10px; /* Add spacing below image */
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
