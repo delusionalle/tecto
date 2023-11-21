@@ -70,12 +70,9 @@ body {
     height: 200px; /* Adjust based on actual height needed */
 }
 
-.logo {
+.logo div {
     width: 100px; /* Adjust based on the actual size of the logo */
     margin-bottom: 20px; /* Add some space below the logo */
-    display: block; /* Makes it easier to center using margin */
-    margin-left: auto; /* Centers the logo horizontally */
-    margin-right: auto; /* Centers the logo horizontally */
 }
 
 .title {
