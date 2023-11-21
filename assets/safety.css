@@ -1,5 +1,9 @@
 /* Reset some default styles */
-body, h1, h2, p, ul {
+body,
+h1,
+h2,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -8,15 +12,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     height: 100vh;
-    background-color: #E96855; /* Use your background color */
+    background-color: white; /* Use your background color */
 }
 
 #top-control-panel {
-    background-color: #234C7D; /* Updated color for the top control panel */
+    background-color: #234c7d; /* Updated color for the top control panel */
     border-radius: 20px;
     padding: 10px;
     position: fixed;
@@ -28,6 +30,8 @@ body {
     display: flex;
     justify-content: space-between; /* Spread content across the panel */
     align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #top-control-panel #logo {
@@ -47,39 +51,49 @@ body {
     cursor: pointer;
     background: transparent; /* Make the background transparent */
     border: none; /* Remove the border */
-    color: #FFFFFF; /* Text color for the buttons */
+    color: #ffffff; /* Text color for the buttons */
 }
 
-#main-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px; /* Adjust the margin as needed */
-}
-
-#logo-section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#logo-section img {
-    max-height: 150px; /* Adjust the max height as needed */
-    margin-right: 100px;
-}
-
-#logo-section h1 {
-    color: #234C7D; /* Text color for the heading */
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-#logo-section button {
-    padding: 10px 20px;
+#top-control-panel a {
     font-size: 16px;
+    padding: 5px;
     cursor: pointer;
-    background: transparent; /* Make the background transparent */
-    border: none; /* Remove the border */
-    color: #234C7D; /* Text color for the button */
+    color: #ffffff; /* Text color for the buttons */
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%; /* Adjust based on your layout preference */
+    margin: 10px; /* Spacing between cards */
+}
+
+.card iframe {
+    width: 100%; /* Iframe takes full width of the card */
+    height: auto; /* Height is auto to maintain aspect ratio */
+    aspect-ratio: 16 / 9; /* Maintain the aspect ratio of 16:9 for YouTube videos */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Cards take more width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Each card takes almost full width on very small screens */
+    }
 }
 
 #right-side-panel img {
@@ -95,7 +109,7 @@ body {
     z-index: 1;
     padding: 2px;
     gap: 10px;
-    background-color: #234C7D;
+    background-color: #234c7d;
     transform: translateY(-50%);
     border-radius: 20px; /* Add border-radius for rounded corners */
 }
@@ -107,7 +121,7 @@ body {
     background: transparent; /* Make the background transparent */
     border: none; /* Remove the border */
     color: #fff; /* Text color for the buttons */
-border-bottom: 10px solid #fff; /* Добавляем белую линию снизу */
+    border-bottom: 10px solid #fff; /* Добавляем белую линию снизу */
 }
 
 #right-side-panel button:last-child {
@@ -124,4 +138,13 @@ border-bottom: 10px solid #fff; /* Добавляем белую линию сн
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    color: blue;
 }

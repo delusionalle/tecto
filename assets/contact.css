@@ -5,7 +5,6 @@ body {
 }
 
 .header {
-    background-color: #f0f0f0;
     text-align: center;
     padding: 20px;
 }
@@ -16,16 +15,16 @@ body {
 
 .partner-container {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .section {
-    width: 50%;
-    padding: 20px;
+    flex: 1; /* Distribute the width equally among the sections */
+    margin: 20px;
+    padding: 25px;
     border-bottom: 1px solid #ccc;
-    background-color: white; /* Add white background color */
-    display: block; /* Set to block layout */
-    text-align: center; /* Center text horizontally */
+    background-color: white;
+    text-align: center;
+    border: 2px solid gold;
 }
 
 .section h2 {
@@ -39,8 +38,7 @@ body {
 
 .partner-img {
     max-width: 200px; /* Increase image size */
-    margin: 0 auto 10px; /* Center the image horizontally and add spacing below */
-    display: block; /* Ensure the image is a block element */
+    margin-bottom: 10px; /* Add spacing below image */
 }
 
 .contact-info {
