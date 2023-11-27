@@ -116,6 +116,7 @@ body {
     background-color: #234c7d;
     transform: translateY(-50%);
     border-radius: 20px; /* Add border-radius for rounded corners */
+    padding: 8px;
 }
 
 #right-side-panel button {
