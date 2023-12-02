@@ -15,6 +15,7 @@ body {
 
 .partner-container {
     display: flex;
+    flex-direction: row;
 }
 
 .section {
@@ -44,4 +45,10 @@ body {
 .contact-info {
     text-align: center;
     margin-top: 20px;
+}
+
+@media (max-width: 1180px) {
+    .partner-container {
+        flex-direction: column; /* Vertical layout for mobile screens */
+    }
 }
