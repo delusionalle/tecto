@@ -27,7 +27,7 @@ body {
     top: 10px;
     left: 0;
     right: 0;
-    z-index: 1; /* Ensure the top control panel is above other elements */
+    z-index: 2; /* Ensure the top control panel is above other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
     display: flex;
     justify-content: space-between; /* Spread content across the panel */
@@ -145,8 +145,93 @@ body {
     align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #top-control-panel a {
         display: none;
     }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu-button div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .menu-button.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-button.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-button.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .menu-container.active {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #3498db;
+        transition: 0.3s;
+    }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 769px) {
+    .menu-button {
+        display: none;
+    }
+
+    .menu-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #3498db;
+        transition: 0.3s;
+    }
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
 }
